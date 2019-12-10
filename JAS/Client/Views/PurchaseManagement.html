@@ -1,0 +1,91 @@
+﻿
+<div class="card-title-w-btn">
+    <h3 class="card-title">Purchases</h3>
+    <a href="#/addpurchases"><i class="fa fa-circle-o"></i> Add Purchase </a>
+  
+
+    <div class="row">
+
+        <form ng-submit="filterfromdate(s)">
+            <div class="col-md-1">FROM</div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input class="form-control" type="date" placeholder="search" ng-model="s.SearchFrom">
+
+                </div>
+            </div>
+            <div class="col-md-1">TO </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input class="form-control" type="date" placeholder="search" ng-model="s.SearchTo">
+                </div>
+            </div>
+            <button class="btn btn-default" type="submit" placeholder="search">Search</button>
+
+           
+
+            </form>
+        <div class="col-md-4">
+            <input class="form-control" type="text" placeholder="search" ng-model="searchi">
+        </div>
+</div>
+   
+    <a href="#/purchases"><i class="fa fa-circle-o"></i> Reset Filter </a>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Purchase Date</th>
+                <th>Purchase Name</th>
+                <th>Transaction Name</th>
+                <th>User</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>price</th>
+                <th>GL Head</th>
+                <th>GL Master</th>
+              
+
+                
+                <th>Transaction Type</th>
+               
+
+            </tr>
+        </thead>
+        <tbody ng-repeat="items in   purchaseresult | filter :searchi |limitTo:itemsq :(currentPage-1)*itemsq">
+            <tr>
+                <td>
+                   {{$index+1}}
+                </td>
+                <td>{{items.purchase_date}}</td>
+                <td>{{items.purchase_name}}</td>
+                <td>{{items.transaction_name}}</td>
+                <td>{{items.user_id}}</td>
+                
+                <td>{{items.item_id}}</td>
+                <td>{{items.quantity}}</td>
+                <td>{{items.credit}}</td>
+                <td>{{items.gl_name}}</td>
+                <td>{{items.gl_master_type}}</td>
+              <td>{{items.transactions_type}}</td>
+
+                <!--<td>
+                 <button type="button" hidden class="btn btn-success" ng-click="DeleteGroup(items.group_id)">Delete</button>
+                </td>-->
+
+        </tbody>
+
+
+    </table>
+  <ul uib-pagination total-items="purchaseresult.length"  items-per-page="itemsq"  ng-model="currentPage"  max-size="5" boundary-links="true" num-pages="numPages"></ul>
+</div>
+
+
+
+    <div class="content-wrapper">
+
+        <div id="content" class="content-container animate-fade-up" data-ui-view=""> </div>
+
+    </div>
+

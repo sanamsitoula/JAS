@@ -1,0 +1,633 @@
+﻿<style>
+    /* Colors */
+body {
+  background: #e9edf5;
+  font-family: "Proxima Nova", "Roboto", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sp-container {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  padding-left: 240px;
+  box-sizing: border-box;
+}
+.sp-toggle-sidebar .sp-container {
+  padding-left: 0;
+}
+.sp-container .sp-sidebar {
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  left: 240px;
+  margin-left: -240px;
+  background: #4a5864;
+  width: 240px;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.sp-toggle-sidebar .sp-container .sp-sidebar {
+  width: 0;
+}
+.sp-container .sp-sidebar .logo {
+  background: #37414a;
+  width: 240px;
+  padding: 20px 65px;
+}
+.sp-container .sp-sidebar .logo img {
+  width: 100%;
+}
+.sp-container .sp-sidebar .nav {
+  width: 240px;
+}
+.sp-container .sp-sidebar .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sp-container .sp-sidebar .nav ul li {
+  position: relative;
+  border-bottom: 1px solid #5c6974;
+  font-weight: 600;
+}
+.sp-container .sp-sidebar .nav ul li.nav-label {
+  display: block;
+  padding: 20px 25px;
+  margin: 12px 0 0;
+  color: #91a0ad;
+  font-size: 16px;
+  line-height: 1;
+}
+.sp-container .sp-sidebar .nav ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #c7d4e0;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.sp-container .sp-sidebar .nav ul li a:hover {
+  color: #FFFFFF;
+}
+.sp-container .sp-sidebar .nav ul li a i {
+  width: 15px;
+  margin: 0 6px 0 0;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown.sp-dropdown-active {
+  border-bottom: none;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown.sp-dropdown-active > a {
+  background: #33b7d8;
+  color: #FFFFFF;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown.sp-dropdown-active > a:after {
+  transform: rotate(180deg);
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown > a {
+  position: relative;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown > a:after {
+  content: '\f0ab';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin: -6px 0 0 0;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu {
+  position: relative;
+  background: #37414a;
+  display: none;
+  border-left: 5px solid #33b7d8;
+  padding: 20px 25px 15px;
+  -webkit-box-sizing: border-box;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu:before {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  border-left: 2px solid #5c6974;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li {
+  position: relative;
+  border: none;
+  font-size: 14px;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  background: #5c6974;
+  width: 10px;
+  height: 2px;
+  margin: -1px 0 0;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  background: #5c6974;
+  width: 2px;
+  height: 100%;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li a {
+  padding: 10px 10px 10px 20px;
+  color: #91a0ad;
+  font-size: 14px;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li a:before {
+  content: '\f10c';
+  font-family: 'FontAwesome';
+  margin: 0 4px 0 0;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li a:hover {
+  color: #FFFFFF;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li.sp-dropdown-active a {
+  color: #FFFFFF;
+}
+.sp-container .sp-sidebar .nav ul li.sp-dropdown .sp-dropdown-menu li.sp-dropdown-active a:before {
+  color: #33b7d8;
+}
+.sp-container .sp-content {
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.sp-container .sp-content .container-fluid {
+  padding: 0 30px;
+}
+.sp-container .sp-content .header {
+  background: #FFFFFF;
+  margin: 0 0 30px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.sp-container .sp-content .header .sp-navbar {
+  background: #f9fcfd;
+  padding: 18px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.sp-container .sp-content .header .sp-navbar .nav button {
+  background: #FFFFFF;
+  width: 45px;
+  margin: 0 6px 0 0;
+  padding: 0;
+  border: 1px solid #e2e7e7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #bbc7d2;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+}
+.sp-container .sp-content .header .sp-navbar .nav button:last-child {
+  margin: 0;
+}
+.sp-container .sp-content .header .sp-navbar .profile {
+  padding: 5px 0;
+}
+.sp-container .sp-content .header .sp-navbar .profile .avatar {
+  display: inline-block;
+  max-width: 32px;
+  max-height: 32px;
+  margin: 0 6px 0 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.sp-container .sp-content .header .sp-navbar .profile .avatar img {
+  width: 100%;
+}
+.sp-container .sp-content .header .sp-navbar .profile span {
+  display: inline-block;
+  color: #a1aeb9;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.sp-container .sp-content .header .sp-navbar .profile span i {
+  font-size: 12px;
+  margin: 0 0 0 6px;
+}
+.sp-container .sp-content .header .main-header .top-header {
+  padding: 15px 0 0;
+  border-bottom: 1px solid #e2e7e7;
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb {
+  background: 0;
+  margin: 5px 0 0;
+  padding: 0 0;
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb li {
+  color: #91a0ad;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb li:first-child:before {
+  display: none;
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb li:before {
+  content: '\f105';
+  font-family: 'FontAwesome';
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb li.active a {
+  margin: 0 0 -1px;
+  border-bottom: 1px solid #33b7d8;
+  color: #33b7d8;
+}
+.sp-container .sp-content .header .main-header .top-header .breadcrumb li a {
+  display: inline-block;
+  padding: 10px 0;
+  color: #91a0ad;
+  text-decoration: none;
+}
+.sp-container .sp-content .header .main-header .page-header {
+  margin: 0;
+  padding: 25px 0;
+  border: 0;
+}
+.sp-container .sp-content .header .main-header .page-header .page-title {
+  padding: 16px 0;
+}
+.sp-container .sp-content .header .main-header .page-header .page-title .icon {
+  display: inline-block;
+  background: #000000;
+  width: 65px;
+  height: 65px;
+  margin: 0 26px 0 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.sp-container .sp-content .header .main-header .page-header .page-title h1 {
+  display: inline-block;
+  color: #91a0ad;
+  margin: 0;
+  line-height: 1;
+  font-size: 40px;
+  vertical-align: middle;
+}
+.sp-container .sp-content .header .main-header .page-header .page-title h1 span {
+  display: block;
+  font-size: 14px;
+  color: #bbc7d2;
+}
+.sp-container .sp-content .header .main-header .page-header .nav-pills {
+  vertical-align: middle;
+}
+.sp-container .sp-content .header .main-header .page-header .nav-pills li {
+  display: inline-block;
+  margin-right: 21px;
+}
+.sp-container .sp-content .header .main-header .page-header .nav-pills li a {
+  display: block;
+  background: #f9fcfd;
+  width: 145px;
+  padding: 25px 0;
+  border: 2px solid #e2e7e7;
+  color: #91a0ad;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.sp-container .sp-content .header .main-header .page-header .nav-pills li a .label {
+  display: block;
+  color: #bbc7d2;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.sp-container .sp-content .main-content .module {
+  position: relative;
+  margin-bottom: 30px;
+}
+.sp-container .sp-content .main-content .module .module-head {
+  background: #33b7d8;
+  padding: 25px 35px;
+  margin: 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sp-container .sp-content .main-content .module .module-head .label {
+  background: #2692ad;
+  margin: 0 0 0 11px;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.sp-container .sp-content .main-content .module .module-head:after {
+  content: '\f0ab';
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  margin: -18px 0 0 0;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.sp-container .sp-content .main-content .module .module-content {
+  background: #FFFFFF;
+  border: 1px solid #e3e6ee;
+  border-top: 0;
+}
+
+</style>
+<div class='sp-container'>
+    <div class='sp-sidebar'>
+        <div class='logo'>
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/sparked_logo.png'>
+        </div>
+        <div class='nav'>
+            <ul>
+                <li class='nav-label'>
+                    Main
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-dashboard'></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class='sp-dropdown'>
+                    <a href='#'>
+                        <i class='fa fa-user'></i>
+                        Customers
+                    </a>
+                    <ul class='sp-dropdown-menu'>
+                        <li>
+                            <a href='#'>
+                                Explorer
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                Compare Segments
+                            </a>
+                        </li>
+                        <li class='sp-dropdown-active'>
+                            <a href='#'>
+                                All Segments
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-money'></i>
+                        Revenue at Risk
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-warning'></i>
+                        Reasons
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-rocket'></i>
+                        Actions
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-flask'></i>
+                        Funnel
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-arrow-circle-down'></i>
+                        Export
+                    </a>
+                </li>
+                <li class='nav-label'>
+                    Misc.
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-gear'></i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-users'></i>
+                        Members
+                    </a>
+                </li>
+                <li>
+                    <a href='#'>
+                        <i class='fa fa-codepen'></i>
+                        CodePen
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class='sp-content'>
+        <header class='header'>
+            <div class='sp-navbar'>
+                <div class='container-fluid'>
+                    <div class='nav pull-left'>
+                        <button class='prev'>
+                            <i class='fa fa-angle-left'></i>
+                        </button>
+                        <button class='next'>
+                            <i class='fa fa-angle-right'></i>
+                        </button>
+                    </div>
+                    <div class='profile pull-right'>
+                        <div class='avatar'>
+                            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/profile/profile-80_3.jpg'>
+                        </div>
+                        <span>
+                            Andy Tran
+                            <i class='fa fa-unsorted'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class='main-header'>
+                <div class='container-fluid'>
+                    <div class='top-header'>
+                        <div class='row'>
+                            <div class='col-md-6'>
+                                <ol class='breadcrumb'>
+                                    <li>
+                                        <a href='#'>Risk Factors</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>Segments</a>
+                                    </li>
+                                    <li class='active'>
+                                        <a href='#'>New Costumers</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class='col-md-6'>
+                                To Do // Tool Bar, Responsive, Modules
+                            </div>
+                        </div>
+                    </div>
+                    <div class='page-header'>
+                        <div class='row'>
+                            <div class='col-md-6'>
+                                <div class='page-title'>
+                                    <div class='icon'>
+                                        <img src='http://placehold.it/65/33b7d8/ffffff&amp;text=SP'>
+                                    </div>
+                                    <h1>
+                                        New Costumers
+                                        <span>
+                                            See Variables
+                                            <i class='fa fa-angle-down'></i>
+                                        </span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class='col-lg-6'>
+                                <ul class='nav nav-pills pull-right'>
+                                    <li class='active' role='presentation'>
+                                        <a href='#'>
+                                            <span class='label'>Created</span>
+                                            July 1, 2014
+                                        </a>
+                                    </li>
+                                    <li role='presentation'>
+                                        <a href='#'>
+                                            <span class='label'>by</span>
+                                            John Smith
+                                        </a>
+                                    </li>
+                                    <li role='presentation'>
+                                        <a href='#'>
+                                            <span class='label'>Members</span>
+                                            29,418
+                                            <i class='fa fa-long-arrow-right'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class='main-content'>
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class='module'>
+                            <h2 class='module-head'>
+                                Segment Graph
+                            </h2>
+                            <div class='module-content'>
+                                Module Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='module'>
+                            <h2 class='module-head'>
+                                Alert
+                            </h2>
+                            <div class='module-content'>
+                                Module Content
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-8'>
+                        <div class='module'>
+                            <h2 class='module-head'>
+                                Segment KPIs
+                                <div class='label'>Graph measured vs. last month</div>
+                            </h2>
+                            <div class='module-content'>
+                                Module Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class='module'>
+                            <h2 class='module-head'>
+                                Email Customers
+                            </h2>
+                            <div class='module-content'>
+                                Module Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <a class='btn btn-default toggler' href='#'>
+                        <i class='fa fa-exchange'></i>
+                    </a>
+                    Toggle Sidebar
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.sp-dropdown').click(function () {
+        $(this).children('i').stop().toggleClass('fa-arrow-circle-up');
+        $(this).stop().toggleClass('sp-dropdown-active');
+        $(this).children('.sp-dropdown-menu').stop().animate({ height: "toggle", 'padding-top': "toggle", 'padding-bottom': "toggle", opacity: "toggle" }, "slow");
+    });
+
+    $('.toggler').click(function () {
+        $('body').stop().toggleClass('sp-toggle-sidebar', 300);
+    });
+</script>

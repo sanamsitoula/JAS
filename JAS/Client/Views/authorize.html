@@ -1,0 +1,39 @@
+﻿<h2>Authorize</h2>
+<p>{{data}}</p>
+<div class="carousel">
+    <div class="container" >
+        <!--<div>
+            {{sanam}}
+            {{dataQ}}{{labelsN}}
+        </div>-->
+
+        <div class="row" style="width:800px;background-color:whitesmoke;">
+            <div class="col-lg-12">
+                <label>Purchase VS Sales</label>
+
+                <canvas id="line" class="chart chart-line"
+                        chart-data="dataSP" chart-labels="labelsSP" chart-series="serieas" chart-options="options" chart-dataset-override="datasetOverride"></canvas>
+
+            </div>
+        </div>
+        <div class="row" style="width:700px;">
+            <div class="col-lg-6" style="background-color:whitesmoke; padding-left:3px; ">
+                                 <label> Top Purchased Item</label>
+              <canvas id="bar" class="chart chart-bar"
+                       chart-options="options" chart-data="dataQ" chart-color="colors" chart-labels="labelsN"></canvas>
+              </div>
+
+            <div class="col-lg-6" style="background-color:whitesmoke;padding-left:5px;">
+
+            <label >  Top Selling Item</label>
+
+                <canvas id="bar" class="chart chart-bar"
+                        chart-options="options" chart-data="dataQS" chart-color="colors" chart-labels="labelsNS"></canvas>
+            </div>
+        </div>
+        <br/><br/>
+      
+    </div>
+</div>
+
+ 

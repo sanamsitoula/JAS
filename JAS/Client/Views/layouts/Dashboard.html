@@ -1,0 +1,147 @@
+﻿
+<style>
+    ul {
+        list-style-type: none;
+        margin-left: 10px;
+        padding: 0px;
+        overflow: hidden;
+      //  background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+          //  color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    .treeview-menu li {
+        clear: both;
+    }
+
+    .sidebar-menu li {
+        clear: both;
+    }
+
+        .sidebar-menu li a i {
+            margin-right: 5px;
+        }
+</style>
+
+<div ng-controller="authorizeCtrl" >
+
+
+    <div ng-show="admin_name" >
+
+
+
+        <!-- Side-Nav-->
+        <aside class="col-lg-3" style="margin-left:-3%;border: 1px solid red;background-color:azure">
+            <section class="sidebar">
+              
+                <!-- Sidebar Menu-->
+                <ul class="sidebar-menu">
+                    <li><a href="#/authorize"><i class="fa fa-dashboard"></i><span>Status Admin</span></a></li>
+                    <!--<li><a ui-sref="auth.list"><i class="fa fa-dashboard"></i><span>Post</span></a></li>-->
+
+                    <li class="treeview">
+                        <a onclick="hidemenuAdmin()"><i class="fa fa-file-text"></i><span>Admin</span><i class="fa fa-angle-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#/gl"><i class="fa fa-circle-o"></i> Ledger Head Management</a></li>
+                            <li><a href="#/journals"><i class="fa fa-circle-o"></i> Journal Entry Management</a></li>
+
+                            <li><a href="#/groupes"><i class="fa fa-circle-o"></i> Groupes Management</a></li>
+                            <li><a href="#/items"><i class="fa fa-circle-o"></i> Items Management</a></li>
+                            <li><a href="#/purchases"><i class="fa fa-circle-o"></i> Purchase Management</a></li>
+                            <li><a href="#/sales"><i class="fa fa-circle-o"></i> Sales Management</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a onclick="hidemenuReport()"><i class="fa fa-file-text"></i><span>Report</span><i class="fa fa-angle-right"></i></a>
+                        <ul class="report">
+                            <li><a href="#/reports"><i class="fa fa-circle-o"></i> Ledger Report</a></li>
+                            <li><a href="#/purchases"><i class="fa fa-circle-o"></i> Purchase Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/logout"><i class="fa fa-dashboard"></i><span>Log Out</span></a></li>
+
+                </ul>
+            </section>
+        </aside>
+
+
+     
+
+        <div class="content-wrapper col-lg-9">
+
+            <div id="content" class="content-container animate-fade-up" data-ui-view=""> </div>
+        </div>
+
+    </div>
+
+
+    <div ng-hide="admin_name" style="background-color:floralwhite">
+      
+        <div ng-include src="'/Client/Views/UserProfileManagement.html'"></div>
+      
+      </div>
+
+
+
+</div>
+
+<script>
+    function hidemenuAdmin() {
+        var showHideElement = document.getElementsByClassName("treeview-menu");
+        if ($(showHideElement).hasClass('menu-open')) {
+            $(".treeview-menu").parent("li").removeClass("active");
+            $(showHideElement).removeClass('menu-open');
+        }
+        else {
+            $(".treeview-menu").parent("li").addClass("active");
+            $(showHideElement).addClass('menu-open');
+        }
+    }
+
+    function hidemenuReport() {
+        var showHideElement = document.getElementsByClassName("treeview-menu report");
+        if ($(showHideElement).hasClass('menu-open')) {
+            $(".report").parent("li").removeClass("active");
+            $(showHideElement).removeClass('menu-open');
+        }
+        else {
+            $(".report").parent("li").addClass("active");
+            $(showHideElement).addClass('menu-open');
+        }
+    }
+
+
+
+
+
+   // var value = "Key: " + Session.Keys[user] + ", Value: " + Session[Session.Keys[user]].ToString();
+   // $.session.set('user', 'a value').get('some key');
+ var value=$.session.get('user');
+    var someSessionVariable = '@Session["user"]';
+   // var v =angular.fromJson('user')
+    angular.fromJson(sessionStorage.user)
+   // var someSessionVariable = Session['user'];
+   // alert(v);
+  // alert(value);
+
+
+
+
+
+
+</script>
+
+
+

@@ -1,0 +1,250 @@
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\ApplicationInsights.config
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\csc.exe
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\System.Collections.Immutable.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\vbc.exe
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\VBCSCompiler.exe
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\roslyn\VBCSCompiler.exe.config
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\JAS.dll.config
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\JAS.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\JAS.pdb
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Dapper.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\EntityFramework.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\EntityFramework.SqlServer.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.Web.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.WindowsServer.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.ApplicationInsights.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Web.Infrastructure.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.Web.Common.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.Web.Common.WebHost.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Owin.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Net.Http.Formatting.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Helpers.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Http.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Http.WebHost.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Mvc.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Razor.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.Deployment.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.Razor.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\WebActivatorEx.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\WebApiContrib.IoC.Ninject.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Dapper.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\EntityFramework.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\EntityFramework.SqlServer.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.Web.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.AI.WindowsServer.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.ApplicationInsights.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.Web.Common.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Ninject.Web.Common.WebHost.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Razor.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.Deployment.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Webpages.Razor.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Helpers.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Mvc.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Net.Http.Formatting.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Http.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Http.WebHost.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\obj\Debug\JAS.csprojResolveAssemblyReference.cache
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\obj\Debug\JAS.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\obj\Debug\JAS.pdb
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Cors.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Security.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\System.Web.Cors.dll
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Cors.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Security.xml
+c:\users\percoid-it\documents\visual studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS\JAS\bin\Newtonsoft.Json.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS\JAS\bin\Newtonsoft.Json.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\ApplicationInsights.config
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\csc.exe
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\vbc.exe
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\VBCSCompiler.exe
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\JAS.dll.config
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\JAS.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\JAS.pdb
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Dapper.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\EntityFramework.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\EntityFramework.SqlServer.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.Web.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Cors.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Security.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Newtonsoft.Json.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.Web.Common.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Owin.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.Formatting.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Cors.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Helpers.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Http.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Http.WebHost.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Mvc.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Razor.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.Razor.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\WebActivatorEx.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Dapper.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\EntityFramework.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\EntityFramework.SqlServer.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.Web.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Cors.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Security.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Newtonsoft.Json.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.Web.Common.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Razor.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Webpages.Razor.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Helpers.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Mvc.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Http.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Web.Http.WebHost.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\obj\Debug\JAS.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\obj\Debug\JAS.pdb
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\obj\Debug\JAS.csprojResolveAssemblyReference.cache
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.Extensions.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.Primitives.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.WebRequest.dll
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.xml
+C:\Users\percoid-it\Documents\Visual Studio 2015\Projects\JAS2REPO\JAS\JAS\bin\System.Net.Http.WebRequest.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\ApplicationInsights.config
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\csc.exe
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\vbc.exe
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\JAS.dll.config
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\JAS.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\JAS.pdb
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Dapper.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\EntityFramework.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\EntityFramework.SqlServer.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.Web.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Cors.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Security.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Newtonsoft.Json.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.Web.Common.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Owin.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.Extensions.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.Formatting.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.Primitives.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.WebRequest.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Cors.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Helpers.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Http.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Http.WebHost.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Mvc.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Razor.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.Razor.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\WebActivatorEx.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Dapper.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\EntityFramework.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\EntityFramework.SqlServer.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.Web.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Cors.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Security.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Newtonsoft.Json.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.Web.Common.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Net.Http.WebRequest.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Razor.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Webpages.Razor.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Helpers.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Mvc.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Http.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\bin\System.Web.Http.WebHost.xml
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\obj\Debug\JAS.csprojResolveAssemblyReference.cache
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\obj\Debug\JAS.dll
+C:\Users\Manas\Documents\Visual Studio 2015\Projects\gitrepo\New folder\JAS\JAS\JAS\obj\Debug\JAS.pdb

@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS-->
+    <!--//<link href="Content/bootstrap.min.css" rel="stylesheet" />-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Resources/css/main.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+ 
+    <!--<script src="Resources/js/jquery-2.1.4.min.js"></script>-->
+    <script src="Scripts/jquery-3.1.0.js"></script>
+  
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Client/Resources/jquery.session.js"></script>
+
+    <script src="Resources/js/BOOTSTRAP_NOTIFY.js"></script>
+    <script src="Resources/js/angular.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="Resources/js/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+
+    <script src="Scripts/Chart.js"></script>
+
+    <script src="Client/Resources/angular-chart.min.js"></script>
+
+ 
+
+    <!--client controller Angular-->
+   
+
+
+    <script src="Client/app.js"></script>
+
+
+    <script src="Client/Services/accountService.js"></script>
+    <script src="Client/Services/userService.js"></script>
+    <script src="Client/Services/dataService.js"></script>
+    <script src="Client/Services/glServices.js"></script>
+    <script src="Client/Services/groupServices.js"></script>
+    <script src="Client/Services/itemService.js"></script>
+    <script src="Client/Services/purchaseService.js"></script>
+    <script src="Client/Services/saleService.js"></script>
+    <script src="Client/Services/reportService.js"></script>
+    <script src="Client/Services/journalentryService.js"></script>
+ 
+    <script src="Client/Controllers/registerCtrl.js"></script> 
+    <script src="Client/Controllers/userProfileCtrl.js"></script>
+    <script src="Client/Controllers/authorizeCtrl.js"></script>
+    <script src="Client/Controllers/loginCtrl.js"></script>
+    <script src="Client/Controllers/glCtrl.js"></script>
+    <script src="Client/Controllers/roleCtrl.js"></script>
+    <script src="Client/Controllers/groupCtrl.js"></script>
+    <script src="Client/Controllers/notificationCtrl.js"></script>
+    <script src="Client/Controllers/itemCtrl.js"></script>
+    <script src="Client/Controllers/purchaseCtrl.js"></script>
+    <script src="Client/Controllers/reportCtrl.js"></script>
+    <script src="Client/Controllers/saleCtrl.js"></script>
+    <script src="Client/Controllers/journalentryCtrl.js"></script>
+    <script src="https://khalti.com/static/khalti-checkout.js"></script>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" ng-app="myApp">
+
+
+    <!--===| Header Top Start |===-->
+    <div id="offcanvas-container" class="wrapper offcanvas-container">
+      
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 hidden-xs col-sm-12">
+                            <!-- Top right side content -->
+                            <ul class="fa-ul list-inline top-info level-one">
+                                <li><a href="#"><i class="flaticon-facebook55"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter1"></i></a></li>
+                                <li><a href="#"><i class="flaticon-socialnetwork171"></i></a></li>
+                                <li class="pull-right"><i class="fa fa-phone"></i> Call Us Today:  <a class="tel-no" href="tel:564351423">+977- 9843702470</a></li>
+                                <li class="pull-right"><i class="fa fa-envelope"></i><a class="tel-no" href="mailto:support@urbangrill.com"> support@chichipapa.com.np</a></li>
+                                <li class="pull-right"><i class="fa fa-sign-in"></i><a class="tel-no" data-toggle="modal" data-target="#loginmodel"> Login</a></li>
+                                <li class="pull-right"><i class="fa fa-shopping-cart"></i><a class="tel-no" data-toggle="modal" data-target="#checkoutmodal"> Cart</a></li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===| Header Top End |===-->
+
+            <header class="header-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="logo">
+                                <a title="UrbanGrill" ui-sref="home">
+
+                                    <img id="logo" src="Client/Resources/uploads/logo.png" alt="UrbanGrill Logo">
+                                </a>
+                            </div><!-- /Logo -->
+                            <!-- =========================================
+                            Menu
+                            ========================================== -->
+                            <div class="navbar navbar-default mainnav">
+                                <div class="navbar-header navbar-right pull-right">
+                                    <div id="offcanvas-trigger-effects" class="column">
+                                        <button type="button" class="navbar-toggle visible-sm visible-xs" data-toggle="offcanvas" data-target=".navbar-collapse" data-placement="right" data-effect="offcanvas-effect">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                    </div><!-- offcanvas-trigger-effects -->
+                                </div><!-- .navbar-header -->
+
+                                <div class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a ui-sref="home">Home</a></li>
+                                        <li><a href="about-us.php">About Us</a></li>
+                                        <li class="dropdown mega-menus"><a href="menu.php">Menu</a></li>
+                                        <!-- Pages -->
+                                        <li><a href="#0">Restaurant </a></li>
+                                        <li><a href="gallery.php">Gallery </a></li>
+                                        <!-- Contact Pages -->
+                                        <li><a href="#/contactus">Contact</a></li><!-- /Contact Pages -->
+                                        <li><i id="search" class="flaticon-search74"></i></li>
+                                        <li><i class="fa fa-shopping-cart"></i><span class="count">0</span></li>
+                                    </ul><!-- .navbar-nav -->
+                                </div><!-- .navbar-collapse -->
+                            </div><!-- .navbar -->
+                        </div><!-- .col-xs-12 -->
+                    </div><!-- .row -->
+                </div> <!-- .container -->
+            </header><!-- /header-wrapper -->
+            <!--------------------------------------------------old menu ------------------------------------------------------------------------------->
+            <!--<div class="container">
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="#myPage">JAS</a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a ui-sref="home">HOME</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li style="float:right"><a data-toggle="modal" data-target="#loginmodel"><i  class="fa fa-sign-in" style="font-size:28px;color:white"></i>Login</a></li>
+                        <li style="float:right"> <a href="" data-toggle="modal" data-target="#checkoutmodal"><i class="fa fa-shopping-cart" style="font-size:38px;color:red"></i></a></li>
+                    </ul>
+                </div>
+            </div>-->
+
+
+
+
+
+
+            <div class="col-lg-12" data-ui-view=""></div>
+
+            <div id="fb-root"></div>
+
+    <div class="col-lg-12">
+
+            <footer>
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <h3 class="footer-title">latest tweets</h3>
+                                <div class="tweet-feed">
+                                    <div class="tweet"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <h3 class="footer-title">opening hour</h3>
+                                <div class="open-time opening-time">
+                                    <p class="clock-time"><strong>monday :</strong> closed</p>
+                                    <p><strong>tue-fri :</strong> 8am - 12am</p>
+                                    <p><strong>sat-sun :</strong> 7am - 1am</p>
+                                    <p><strong>holydays :</strong> 12pm-12am</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <h3 class="footer-title">contacts</h3>
+                                <div class="address">
+                                    <p class="icon-map"><i class="fa fa-map-marker"></i><strong>address :</strong>  Dharan, </p>
+                                    <p class="road-details">Bhanu Chowk</p>
+                                    <p><i class="fa fa-phone"></i><strong>phone :</strong> <a href="tel:7072550211">9843702470</a></p>
+                                    <p><i class="fa fa-envelope"></i><strong>email :</strong><a href="mailto:admin@food.com"> admin@food.com</a></p>
+                                </div>
+                                <ul class="list-inline footer-social-list">
+                                    <li><a href="#"><i class="flaticon-twitter1"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-facebook55"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-linkedin11"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-google116"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest34"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <h3 class="footer-title">Instagram</h3>
+                                <div class="images-gellary">
+                                    <ul>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 01"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 02"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 03"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 04"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 05"></a></li>
+                                        <li><a href="#"><img src="http://placehold.it/85X85" alt="Instagram 06"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="copy-right pull-left">
+                                    <p>Copyright-2017</p>
+                                </div>
+
+                                <div class="back-top pull-right">
+                                    <i class="fa fa-angle-up "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--==| Footer section End|==-->
+
+        <!--==| .inner-wrapper |==-->
+        <!--==| offcanvas-menu |==-->
+        <div class="offcanvas-menu offcanvas-effect  hidden-sm hidden-md hidden-lg">
+            <button id="off-canvas-close-btn" class="close" type="button" aria-hidden="true" data-toggle="offcanvas">&times;</button>
+            <h2>Sidebar Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="reservation.html">reservations</a></li>
+                <li><a href="gallery.html">Gallery </a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="contact-us.html">contact</a></li>
+            </ul>
+        </div><!-- .offcanvas-menu -->
+    </div>  <!-- .wrapper -->
+  
+  
+    <!-- Google Map PopUp -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+   
+
+  
+
+    <div class="modal fade" id="loginmodel" data-dismiss="loginmodel">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="row">
+                        <div class="col-lg-6" ng-controller="loginCtrl">
+
+                            <form class="modal-content animate login-form" ng-submit="login()">
+
+
+
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label> <br />
+                                    <input type="text" placeholder="Enter Username" name="uname" ng-model="account.user_name" required>
+                                    <br /><br />
+                                    <label for="psw"><b>Password</b></label><br />
+                                    <input type="password" placeholder="Enter Password" name="psw" ng-model="account.password" required>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+                                <div class="" style="background-color:#f1f1f1">
+                                    <button type="submit" data-dismiss="loginmodel">Login</button>
+
+                                    <button type="button" onclick="document.getElementById('loginmodel').style.display = 'none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="col-lg-6" ng-controller="registerCtrl">
+                            <div class="">
+                                Register Customer
+
+                                <form ng-submit="Create(vm.CreateUser)">
+                                    <div class="">
+
+                                        <div class="form-group">
+                                            <label class="control-label">First Name</label>
+                                            <input class="form-control" type="text" placeholder="First Name" ng-model="vm.CreateUser.first_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label"> Last Name</label>
+                                            <input class="form-control" type="text" placeholder="Last Name" ng-model="vm.CreateUser.last_name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Email :</label>
+                                            <input type="text" ng-model="vm.CreateUser.email_id" />
+                                            <br />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>password :</label>
+                                            <input type="password" ng-model="vm.CreateUser.password" /><br />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>username :</label>
+                                            <input type="text" ng-model="vm.CreateUser.user_name" /><br />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="vm.CreateUser.IsChecked">I accept the terms and conditions
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <button type="submit" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <div class="" style="background-color:#f1f1f1">
+                                    OR Register  With <br />
+                                    <a> <i class="fa fa-google-plus-official" style="font-size:48px;color:red"></i></a> <br />
+                                    <a><i class="fa fa-facebook-square" style="font-size:48px;color:red"></i></a> <br />
+                                    <a><i class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a><br />
+                                    <br />
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+    <script>
+
+        $(function () {
+            $("#datepicker").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            }).datepicker('update', new Date());
+        });
+
+    </script>
+    <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+
+</body>
+</html>

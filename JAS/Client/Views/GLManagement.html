@@ -1,0 +1,175 @@
+﻿
+<div class="card">
+    <h3 class="card-title">Ledger</h3>
+  
+
+        <div class="form-group">
+
+        
+            <input class="form-control" type="text" placeholder="Name" ng-model="searchgl">
+        </div>
+   
+
+    <button class="btn btn-default btn-success btn-sm" data-toggle="modal" data-target="#myModal2">Add  </button>
+
+   
+     <button class="btn btn-link" ng-click="exportToExcel('#tableToExport')">
+        <span class="glyphicon glyphicon-share"></span>
+      Excel
+    </button>
+    <button class="btn btn-link" ng-click="export('#tableToExport')">
+        <span class="glyphicon glyphicon-share"></span>
+        PDF
+    </button>
+    <div id="tableToExport">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'gl_name'; sortReverse = !sortReverse">
+                            Ledger Head
+                            <span ng-show="sortType == 'gl_name' && !sortReverse" class="glyphicon glyphicon-arrow-up"></span>
+                            <span ng-show="sortType == 'gl_name' && sortReverse" class="glyphicon glyphicon-arrow-down"></span>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'gl_code'; sortReverse = !sortReverse">
+                            Ledger Code
+                            <span ng-show="sortType == 'gl_code' && !sortReverse" class="glyphicon glyphicon-arrow-up"></span>
+                            <span ng-show="sortType == 'gl_code' && sortReverse" class="glyphicon glyphicon-arrow-down"></span>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType = 'gl_master_type'; sortReverse = !sortReverse">
+                            Master Type
+                            <span ng-show="sortType == 'gl_master_type' && !sortReverse" class="glyphicon glyphicon-arrow-up"></span>
+                            <span ng-show="sortType == 'gl_master_type' && sortReverse" class="glyphicon glyphicon-arrow-down"></span>
+                        </a>
+                    </th>
+
+
+                    <th>Actions</th>
+                    <!--<th>{{result}}</th>-->
+                </tr>
+              
+            </thead>
+            <tbody ng-repeat="items in   glresult | filter :searchgl | orderBy:sortType:sortReverse ">
+                <tr>
+                    <td>
+                        {{$index+1}}
+                    </td>
+                    <td>{{items.gl_name}}</td>
+                    <td>{{items.gl_code}}</td>
+                    <td>{{items.gl_master_type}}</td>
+
+
+                    <td>
+                        <a ng-click="getGLById(items.gl_id)" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+
+                        <a href="#" ng-click="DeleteGL(items.gl_id)">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+
+
+
+                    </td>
+
+                </tr>
+            </tbody>
+
+
+        </table>
+        <a href="#" data-ng-click="exportAction('pdf')"> Export Pdf</a><br /><br />
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <form ng-submit="editGroup(g)">
+                    <div class="form-group">
+
+                        <label class="control-label">Group Name</label>
+                        <input class="form-control" type="text" placeholder="Name" ng-model="g.group_name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Group Code</label>
+                        <input class="form-control" type="text" placeholder="Edit Name" ng-model="g.group_code">
+                    </div>
+
+
+
+                    <div>
+                        <button type="submit" class="btn btn-danger">Update</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add GL</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <form ng-submit="add(gl)">
+                    <div class="form-group">
+                        <label class="control-label">Ledger Head</label>
+                        <input class="form-control" type="text" placeholder="Name" ng-model="gl.gl_name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">GL Code</label>
+                        <input class="form-control" type="text" placeholder="Name" ng-model="gl.gl_code">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Master Type</label>
+                        <input class="form-control" type="text" placeholder="Name" ng-model="gl.gl_master_type">
+                    </div>
+
+
+
+                    <div>
+                        <button type="submit" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var blob = new Blob([document.getElementById('exportable').innerHTML], {
+        type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8"
+    });
+    saveAs(blob, "GLReport.xls");
+    };
+</script>

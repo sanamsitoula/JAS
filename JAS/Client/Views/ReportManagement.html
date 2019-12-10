@@ -1,0 +1,184 @@
+﻿
+<div class="card-title-w-btn">
+    <h3 class="card-title">Report</h3>
+    <a href="#/addpurchases"><i class="fa fa-circle-o"></i> Add Purchase </a>
+  
+
+    <div class="row">
+
+        <form ng-submit="filterfromdate(s)">
+            <div class="col-md-1">FROM</div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input class="form-control" type="date" placeholder="search" ng-model="s.SearchFrom">
+
+                </div>
+            </div>
+            <div class="col-md-1">TO </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input class="form-control" type="date" placeholder="search" ng-model="s.SearchTo">
+                </div>
+            </div>
+            <button class="btn btn-default" type="submit" placeholder="search">Search</button>
+
+           
+
+            </form>
+        <div class="col-md-4">
+            <input class="form-control" type="text" placeholder="search" ng-model="searchi">
+        </div>
+</div>
+   
+  
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ledger Head</th>
+                <th>Debit Amount</th>
+                <th>Credit Amount</th>
+               
+              
+
+                
+        
+
+            </tr>
+        </thead>
+        <tbody ng-repeat="items in   purchaseresult | filter :searchi |limitTo:itemsq :(currentPage-1)*itemsq">
+            <tr>
+                <td>
+                   {{$index+1}}
+                </td>
+                <td>{{items.gl_name}}</td>
+                <td>{{items.Debit_Amount}}</td>
+                <td>{{items.Credit_Amount}}</td>
+             
+              
+            </tr>
+           
+           
+        </tbody>
+
+        <br/>
+        <tr><th></th>
+            <th>Total</th>
+        <th>Rs.{{TotaldebitAmount}}</th>
+            <th>Rs.{{TotalcreditAmount}}</th>
+
+        </tr>
+    </table>
+  <ul uib-pagination total-items="purchaseresult.length"  items-per-page="itemsq"  ng-model="currentPage"  max-size="5" boundary-links="true" num-pages="numPages"></ul>
+</div>
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Purchase</h4>
+            </div>
+            <div class="modal-body" ng-controller="purchaseCtrl">
+
+
+                <form ng-submit="add(g)">
+
+                    <div class="row">
+                       
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Item Name</label>
+                                <select class="form-control" ng-model="g.groupes" ng-options="Data as Data.group_name for Data in groupresult">
+                                    <option value="" disabled>Select Group</option>
+                                </select>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Quantity</label>
+                                <input class="form-control" type="number" placeholder=""   ng-model="g.photo">
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="form-group">
+                                <label class="control-label">Price</label>
+                                <input class="form-control" type="number" placeholder="" ng-model="g.photo">
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Group Name</label>
+                               
+
+                               
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Item CP</label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_cp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Item SP </label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_sp">
+                            </div>
+                            </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Units</label>
+                                <input class="form-control" type="text" placeholder="pieces" ng-model="g.item_unit">
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <label class="control-label">Quantity</label>
+                                    <input class="form-control" type="number" placeholder="" ng-model="g.item_quantity">
+                                </div>
+                                </div>
+
+                            </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+
+        <div id="content" class="content-container animate-fade-up" data-ui-view=""> </div>
+
+    </div>
+</div>

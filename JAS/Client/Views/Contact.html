@@ -1,0 +1,126 @@
+﻿<!--===| Right Fixed Booking Form Start|===-->
+<div class="book-now-wrapper">
+    <p class="toggle">book a table now</p>
+    <div class="book-now ">
+        <div class="book-form">
+            <p>free & instant online restaurant reservations</p>
+            <form id="sidebar_form" action="php/reservation.php" method="post" name="sidebarForm">
+                <div class="col-xs-12 col-sm-12">
+                    <input class="form-control" type="text" name="name" placeholder="name">
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <input id="email-sidebar" class="form-control" type="email" name="mail" placeholder="E-mail">
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <input id="datepicker-sidebar" class="form-control" type="text" name="date" placeholder="date">
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <input class="form-control" type="text" name="person-no" placeholder="number of person">
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <textarea class="form-control" rows="3" name="message" placeholder="message &amp; special request"></textarea>
+                </div>
+                <div class="form-group col-xs-12">
+                    <div id="sidebar_mail_success" class="success" style="display:none;">Your message has been sent successfully. </div>
+                    <div id="sidebar_mail_fail" class="error" style="display:none;"> Sorry, error occured this time sending your message. </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <button id="send-message-sidebar" class="btn" type="submit">make a reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--===| Right Fixed Booking Form End|===-->
+<!--===| Contact Banner Start|===-->
+<section class="banner-wrapper contact-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>contact us</h1>
+                <p>Best of Dining Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===| Contact Banner End|===-->
+<!--===| Contact Body Start|===-->
+<section class="section-padding contact-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-wrapper">
+                    <h2>leave a message</h2>
+                    <p>Maecenas accumsan id enim in fermentum. Duis porttitor iaculis liber itae congue. Aliquam finibus euismod arcu, a lobortis erat luctus</p>
+                    <form id='contact_form' name="enqueryForm" method="post" action="php/email.php">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <input type="text" class="form-control" name="name" placeholder="name">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12">
+                                <input id="email" type="email" class="form-control" name="email" placeholder="e-mail">
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <input type="text" class="form-control" name="subject" placeholder="subject">
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <textarea id="message" class="form-control" rows="4" name="message" placeholder="message"></textarea>
+                            </div>
+                            <div class="form-group col-xs-12">
+                                <div id="mail_success" class="success" style="display:none;">Your message has been sent successfully. </div>
+                                <div id="mail_fail" class="error" style="display:none;"> Sorry, error occured this time sending your message. </div>
+                            </div>
+                            <button id="send_message" class="btn" name="submit" type="submit">submit message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div id="map-canvas1"></div>
+            </div>
+        </div>
+        <div class="address-wrapper">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="left">
+                        <h3>location</h3>
+                        <p>
+                            317 Pacific Coast Highway<br>
+                            Huntington Beach, CA 92648
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="middle">
+                        <h3>table booking</h3>
+                        <p>
+                            <a href="tel:0563334555">(056) 333-4555</a><br>
+                            <a href="mailto:booking@urbangrill.com">booking@urbangrill.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="right">
+                        <h3>get directions</h3>
+                        <p>
+                            From Airport 3 Minutes Taxi Distance
+                            From Bus Stop 10 Minutes Walking Distance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===| Contact Body End|===-->
+<!--===| Contact Bottom Start|===-->
+<div class="bottom-wrapper bottom-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="btn" href="menu.html">view our food menu</a>
+            </div>
+        </div>
+    </div>
+</div>

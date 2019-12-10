@@ -1,0 +1,270 @@
+﻿
+<div class="card">
+    <h3 class="card-title">Items</h3>
+
+    <button class="btn btn-default btn-success btn-sm" data-toggle="modal" data-target="#myModal2">Add  </button>
+    <div class="form-group">
+
+        <input class="form-control" type="text" placeholder="search" ng-model="searchi">
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item Name</th>
+                <th>Item Code</th>
+                <th>Item Description</th>
+                <th>Photo</th>
+                <th>Group</th>
+                <th>user name</th>
+                <th>CP</th>
+                <th>SP</th>
+                <th>Units | Quantity</th>
+
+            </tr>
+        </thead>
+        <tbody ng-repeat="items in   itemresult | filter :searchi">
+            <tr>
+                <td>
+                    {{$index+1}}
+                </td>
+                <td>{{items.item_name}}</td>
+                <td>{{items.item_code}}</td>
+                <td>{{items.item_description}}</td>
+                <td>
+                   <img  width="300px"
+                         height="200px" 
+                 src="../Client/Resources/uploads/items/{{items.photo}}"/></td>
+                <td>{{items.group_name}}</td>
+                <td>{{items.user_name}}</td>
+                <td>{{items.item_cp}}</td>
+                <td>{{items.item_sp}}</td>
+                <td>{{items.item_unit}} |{{items.item_quantity}}</td>
+
+
+                <td>
+                    <button class="btn btn-danger" ng-click="getItemById(items.item_id)" data-toggle="modal" data-target="#myModal">Update </button>
+                    <button type="button" class="btn btn-success" ng-click="DeleteItem(items.item_id)">Delete</button>
+
+                </td>
+
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <form ng-submit="editItem(g)">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group ">
+                                <label class="control-label">Item Name</label>
+                                <input class="{{(IsFormSubmitted?'ng-dirty' + (f1.item_name.$invalid?' ng-invalid':''):'')}}" autofocus type="text" placeholder="Item Name" ng-model="g.item_name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Item Code</label>
+                                <input class="{{(IsFormSubmitted?'ng-dirty' + (f1.item_code.$invalid?' ng-invalid':''):'')}}" autofocus type="text" placeholder="Item Code" ng-model="g.item_code">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Photo</label>
+                                <span><img width="60px"
+     height="50px"
+     src="../Client/Resources/uploads/items/{{g.photo}}" /> </span>
+                                <input class="form-control" ngf-max-size="20MB" accept="image/*" multiple onchange="angular.element(this).scope().selectFileforUpload(this.files)" id="file" type="file" name="file" placeholder="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="form-group">
+                                <label class="control-label">Item Description</label>
+                                <textarea sstyle="background:gray;" rows="5" class="form-control" type="text" placeholder="" ng-model="g.item_description" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Group Name</label>
+
+
+                                <select class="form-control" ng-model="groupname" ng-options="Data as Data.group_name for Data in groupresult">
+                                    <option value="" disabled>Select Group</option>
+                                </select>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Item CP</label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_cp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Item SP </label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_sp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Units</label>
+                                <input class="form-control" type="text" placeholder="pieces" ng-model="g.item_unit">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Quantity</label>
+                                <input class="form-control" type="number" placeholder="" ng-model="g.item_quantity">
+                            </div>
+                        </div>
+
+                    </div>
+                   
+
+                    <div>
+                        <button type="submit" class="btn btn-danger">Update</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Items</h4>
+            </div>
+            <div class="modal-body" ng-controller="itemCtrl">
+
+
+                <form novalidate name="g" ng-submit="addItemCTRL(g)" >
+                    <div style="color: red">{{Message}}</div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group ">
+                                <label class="control-label">Item Name</label>
+                                <input class="{{(IsFormSubmitted?'ng-dirty' + (f1.item_name.$invalid?' ng-invalid':''):'')}}" autofocus  type="text" placeholder="Item Name" ng-model="g.item_name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Item Code</label>
+                                <input  class="{{(IsFormSubmitted?'ng-dirty' + (f1.item_code.$invalid?' ng-invalid':''):'')}}" autofocus  type="text" placeholder="Item Code" ng-model="g.item_code">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Photo</label>
+                                <input class="form-control" ngf-max-size="20MB" accept="image/*" multiple onchange="angular.element(this).scope().selectFileforUpload(this.files)"  id="file" type="file" name="file" placeholder=""  >
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="form-group">
+                                <label class="control-label">Item Description</label>
+                                <textarea  sstyle="background:gray;" rows="5" class="form-control"  type="text" placeholder="" ng-model="g.item_description" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Group Name</label>
+                               
+
+                                <select  class="form-control" ng-model="g.groupes" ng-options="Data as Data.group_name for Data in groupresult">
+                                    <option value="" disabled>Select Group</option>
+                                </select>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Item CP</label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_cp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Item SP </label>
+                                <input class="form-control" type="number" placeholder="Rs." ng-model="g.item_sp">
+                            </div>
+                            </div>
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label class="control-label">Units</label>
+                                <input class="form-control" type="text" placeholder="pieces" ng-model="g.item_unit">
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <label class="control-label">Quantity</label>
+                                    <input class="form-control" type="number" placeholder="" ng-model="g.item_quantity">
+                                </div>
+                                </div>
+
+                            </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

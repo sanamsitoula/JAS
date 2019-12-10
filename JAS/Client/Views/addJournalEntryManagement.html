@@ -1,0 +1,160 @@
+﻿
+<div class="container" id="addpurchase" role="dialog" ng-controller="journalentryCtrl">
+
+    <div class="card-title">
+        <a href="#/journals"><i class="fa fa-circle-o"></i> Back</a>
+       
+    </div>
+
+   <div class="row">
+       <form ng-submit="addjournalarray(g)">
+        
+             <div class="col-lg-7">
+                 <div class="">
+                     <label class="control-label">Journal Date</label>
+                     <input type="date" class="form-control" ng-model="g.journal_date" />
+                 </div>
+                 <div class="">
+                     <label class="control-label">Journal Name</label>
+                     <input type="text" class="form-control" ng-model="g.journal_name" />
+                 </div>
+
+
+                 <div class="">
+                     <label class="control-label">GL Head Name</label>
+                     <select class="form-control" ng-model="g.gls" ng-options="Data as Data.gl_name for Data in glresult">
+                         <option value="" disabled>Select GL</option>
+                     </select>
+                     
+                 </div>
+             </div>
+           <div class="col-lg-2">
+                  <div class="">
+                    <label class="control-label">Debit</label>
+                    <input type="number" required class="form-control" ng-model="g.Debit_Amount" />
+                </div>
+
+                <div class="">
+                    <label class="control-label">Credit</label>
+                    <input type="number" required class="form-control" ng-model="g.Credit_Amount" />
+                </div>
+                   </div>
+               
+           <div class="col-lg-3">
+               <div class="">
+                   <label class="control-label">Description</label>
+                   <textarea row="3" class="form-control" ng-model="g.transaction_descriptions" />
+
+               </div>
+               <div class="">
+                   <label class="control-label">Transaction Types</label>
+                   <input type="text" class="form-control" ng-model="g.transactions_type" />
+               </div>
+               </div>
+               
+             
+                   <span class="">
+                       <button type="submit" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Add</button>
+                   </span> 
+           
+           
+            
+       </form>
+       </div>
+    {{flag}}
+    <div class="row">
+    <div class="container print"  >
+        <div id="printable">
+            <h6 class="center-block">JAS Joural Entry </h6>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>SN.</th>
+                        <th>Journal Name</th>
+                        <th>Journal Date</th>
+                        <th>GL Head</th>
+
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Description</th>
+                        <th>#</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="items in addjournallist">
+                        <td>{{$index+1}}</td>
+                        <td>{{items.journal_name}}</td>
+                        <td>{{items.journal_date}}</td>
+                        <td>{{items.gl_name}}</td>
+
+
+
+
+                        <td>{{items.Debit_Amount}}</td>
+                        <td>{{items.Credit_Amount}}</td>
+                        <td>{{items.transaction_descriptions}}</td>
+                        <td>
+                            <a href="#" ng-click="deletejournalentryfromlist($index)">
+                                <span class="glyphicon glyphicon-remove">r</span>
+                            </a>
+                        </td>
+                    </tr>
+                   
+
+                </tbody>
+                <tfoot>
+                    <tr>
+
+                        <td></td>
+                        <td>Total</td>
+                        <td></td>
+
+                        <td></td>
+
+                        <td>{{TotaldebitAmount}}</td>
+                        <td>{{TotalcreditAmount}}</td>
+
+                        <td></td>
+                        <td></td>
+
+
+
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <form ng-submit="add(addjournallist)">
+            <div>
+                <button type="submit" ng-disabled="HideSaveBtn" class="btn btn-primary icon-btn"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="table table-striped">Clear</button>
+                <button  class="btn btn-danger" ng-click="printDiv('printable');">Print</button>
+            </div>
+        </form>
+    </div>
+     
+        
+    </div>
+
+                </div>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color:antiquewhite;
+    width:40% !important;
+    font-size:10px;
+}
+th, td {
+    padding: 2px;
+    margin : 0px,0px,0px,0px !important;
+    
+    
+}
+
+</style>
+          <script>
+              
+          </script>
